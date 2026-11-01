@@ -1,0 +1,1237 @@
+ ▐▛███▛█   Claude Code v2.1.312
+▝▜██████▀  Opus 5.5 · Claude Max
+ ▝▝   ▝▝   ~/code/DSpace
+
+
+❯ 1. GOAL: create a canonical set of UI/UX design, user, tech, ADR, wireframe,  
+  etc. that completely, comprehensively, concretely and in specific details     
+  document the UI/UX functional organization, webpage hierarchy, workflow, etc  
+  for this GLAM webapp using copious clear illustrations, diagrams, flow        
+  charts, figures, etc.                                                         
+  2. OUTPUT: save the results in the subdir                                     
+  /Users/jonc/code/archival-intelligence-ai-v2-dev/docs/competitors/dspace/     
+  3. EXECUTION: Do not stop until you have completed the task. Use any          
+  combination of upto 6 parallel top-level orchestration agents where possible  
+  to speed execution. Each orchestration agent should try to decompose and      
+  delegate coherent subtasks to sufficiently capable subagents in parallel      
+  (unto 10 parallel subagents)                                                  
+
+⏺ User answered Claude's questions:
+  ⎿  · The orchestrator gate is ACTIVE: this session runs on claude-opus-5-5, 
+     not the required Fable 5.1. How do you want to proceed with the DSpace 
+     UI/UX doc-set task? → Keep claude-opus-5-5
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ Confirmed: Opus 5.5 is orchestrating this session. Next I'm looking at what's
+  already in the output folder and at the runbook.
+
+  Ran 6 shell commands (ctrl+o to expand)
+
+⏺ Quick update: I cloned the separate DSpace Angular UI read-only (version
+  11.0.0-next, which matches the backend). Now I'm setting up shared conventions
+  so I can dispatch six section leads.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+⏺ Now the common brief all leads read.
+
+⏺ Write(~/code/glam-rev-eng/dspace/ui-docs/_tools/BRIEF-COMMON.md)
+  ⎿  Wrote 122 lines to
+     ~/code/glam-rev-eng/dspace/ui-docs/_tools/BRIEF-COMMON.md
+      1 # Common brief: DSpace UI/UX design documentation set (2026-10-29
+        )
+      2 
+      3 Every lead and every subagent reads this file in full before star
+        ting. It is the single source of conventions; the per-lead brief 
+        only adds scope.
+      4 
+      5 ## Goal
+      6 
+      7 A canonical, comprehensive, concrete documentation set for the UI
+     … +116 lines (~14 KB) (ctrl+o to expand)
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ 6 background agents launched (↓ to manage)
+   ├ @lead-ia (lead-fable)
+   ├ @lead-users (lead-fable)
+   ├ @lead-workflows (lead-fable)
+   ├ @lead-screens (lead-fable)
+   ├ @lead-public (lead-fable)
+   └ @lead-tech (lead-fable)
+
+⏺ All six leads are running. While they work I'm writing the legend and method
+  page and its two diagrams.
+
+⏺ Bash(D=/Users/jonc/code/archival-intelligence-ai-v2-dev/docs/competitors/dspac
+      e/ui-design-docs/figures; cd $D
+      cat > f00-01-diagram-notation.mmd <<'EOF'…)
+  ⎿  OK   /Users/jonc/code/archival-intelligence-ai-v2-dev/docs/competitors
+     /dspace/ui-design-docs/figures/f00-01-diagram-notation.svg
+     OK   /Users/jonc/code/archival-intelligence-ai-v2-dev/docs/competitors
+     /dspace/ui-design-docs/figures/f00-03-set-structure.svg
+  ⎿  Shell cwd was reset to /Users/jonc/code/DSpace
+  ⎿  (another command ran in this repository at the same time; a change 
+     made by either may show under either result)
+
+⏺ Write(~/code/archival-intelligence-ai-v2-dev/docs/competitors/dspace/ui-design
+       -docs/00-legend-and-method.md)
+  ⎿  Wrote 71 lines to ~/code/archival-intelligence-ai-v2-dev/docs/competit
+     ors/dspace/ui-design-docs/00-legend-and-method.md
+      1 # Legend and method
+      2 
+      3 Sources: dspace-angular at `/Users/jonc/code/glam-rev-eng/dspace/
+        dspace-angular` (UI commit dd495bb, version `11.0.0-next`) and th
+        e DSpace backend at `/Users/jonc/code/DSpace` (backend commit 5f9
+        2230e2, version 11.0-SNAPSHOT) · Written 2026-10-29
+      4 
+      5 This page explains how the documentation set was produced, how to
+         read its figures and citations, and how far to trust each statem
+        ent. Read it before the sections.
+     … +66 lines (ctrl+o to expand)
+
+⏺ Bash(cd /Users/jonc/code/archival-intelligence-ai-v2-dev; ls docs/glossary.md;
+      ls docs/adr | grep -i 008; grep -o '"@angular/core": "[^"]*"'
+      /Users/jonc/code/glam-re…)
+  ⎿  docs/glossary.md  15.2K
+     008-dependency-and-licence-boundary.md
+     crosswalk-dev-adrs-0048-0088.md
+     … +5 lines (ctrl+o to expand)
+  ⎿  Shell cwd was reset to /Users/jonc/code/DSpace
+  ⎿  (another command ran in this repository at the same time; a change 
+     made by either may show under either result)
+
+⏺ The legend page is done (the UI turns out to be Angular 20). Now I'm waiting
+  for the six leads to report back; they will notify me as each one finishes.
+  ⎿  Interrupted · What should Claude do instead?
+
+❯ URGENT: save intermediate work to minimize data loss in case of interruption  
+  (mins to hours) then continue                                                 
+  ⎿  Found 2 new diagnostic issues in 1 file (ctrl+o to expand)
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ The six leads are still working and haven't produced section files yet, so I'm
+  saving recovery state to disk—writing a resumable handoff and instructing
+  each lead to save progress incrementally.
+
+⏺ Bash(cat > /Users/jonc/code/glam-rev-eng/dspace/ui-docs/_tools/LEAD-BRIEFS.md
+      <<'EOF'
+      # Lead briefs (dispatched 2026-10-29 ~20:05 by orchestrator session
+      e087c203),…)
+  ⎿  ## Status log
+     - 20:05 tools self-tested, brief written, leads dispatched.
+     - 20:15 checkpoint: legend + f00-01/f00-03 done; lead briefs saved to
+     _tools/LEAD-BRIEFS.md; checkpoint handoff written.
+  ⎿  Shell cwd was reset to /Users/jonc/code/DSpace
+  ⎿  (another command ran in this repository at the same time; a change 
+     made by either may show under either result)
+  Read 1 file (ctrl+o to expand)
+
+⏺ Everything needed to recover is now on disk, and the six section leads are
+  still running.
+
+  - Saved so far:
+    - The read-only clone of the DSpace Angular UI.
+    - The shared conventions and render tools.
+    - All six lead briefs, so any lead can be dispatched again:
+      /Users/jonc/code/glam-rev-eng/dspace/ui-docs/_tools/LEAD-BRIEFS.md.
+    - The finished legend and method page and its two diagrams.
+    - The plan with a status log.
+    - A checkpoint handoff with step-by-step resume instructions:
+      docs/handoffs/2026-10-29_2015_dspace-ui-design-docs-checkpoint-claude.md
+      in the app repo.
+    - A memory note pointing to both files.
+  - No section content yet: the leads had not written any section files when I
+    checked. I've told each one to start its ledger and section index now,
+    update the ledger after every file, and have its subagents write each file
+    to disk as soon as it's finished. That way an interruption costs at most the
+    file in progress.
+  - If the session dies: a new session reads the checkpoint handoff, sees which
+    leads have written their final report, and dispatches the rest again with
+    "resume from ledger". Nothing is committed yet; I'll commit only if you ask.
+
+  I'll check two facts from each lead's report against the source as it comes
+  in, then put the set together.
+
+
+⏺ Teammate @lead-screens failed: You've hit your 5-hour limit · resets 11:30pm 
+(America/New_York)
+  Dispatching all ten subagents now (one scout for the route/menu inventory, two
+  Opus workers for the densest screens, seven Sonnet workers), each with
+  disjoint files and figure ranges.
+  ⎿  You've hit your 5-hour limit · resets 11:30pm (America/New_York)
+     /usage-credits to finish what you’re working on.
+
+
+⏺ Teammate @lead-screens failed: You've hit your 5-hour limit · resets 11:30pm 
+(America/New_York)
+
+⏺ Teammate @lead-workflows failed: You've hit your 5-hour limit · resets 11:30pm
+(America/New_York)
+  Now the parallel dispatch: seven drafting workers and two evidence scouts,
+  each with disjoint files and figure ranges.
+  ⎿  You've hit your 5-hour limit · resets 11:30pm (America/New_York)
+     /usage-credits to finish what you’re working on.
+
+
+⏺ Teammate @lead-workflows failed: You've hit your 5-hour limit · resets 11:30pm
+(America/New_York)
+  ⎿  You've hit your 5-hour limit · resets 11:30pm (America/New_York)
+     /usage-credits to finish what you’re working on.
+
+⏺ Remote Control disconnected — signed-in claude.ai account or 
+  organization changed on this machine — run /remote-control to start a 
+  session for the current account, or /login to switch back, then 
+  /remote-control
+
+❯ continue and have each sub/agent periodically save their work to minize data  
+  loss in case of interruptions                                                 
+  ⎿  1 skill available
+
+⏺ Bash(date; D=/Users/jonc/code/archival-intelligence-ai-v2-dev/docs/competitors
+      /dspace/ui-design-docs; for s in $D/*/; do printf '%-34s md=%s svg=%s
+      mmd=%s\n' $(basen…)
+  ⎿  Thu Oct 29 19:34:47 EDT 2026
+     01-information-architecture        md=1 svg=0 mmd=0
+     02-users-roles-permissions         md=3 svg=0 mmd=0
+     … +167 lines (ctrl+o to expand)
+  ⎿  (another command ran in this repository at the same time; a change 
+     made by either may show under either result)
+
+⏺ Two leads stopped when the Fable 5-hour limit hit (it resets at 11:30pm), and
+  the other four could hit it too. I'm adding a save-as-you-go rule to the
+  shared brief, then restarting the two stopped leads on Opus from their
+  ledgers.
+
+⏺ Bash(cat >>
+      /Users/jonc/code/glam-rev-eng/dspace/ui-docs/_tools/BRIEF-COMMON.md
+      <<'EOF'…)
+  ⎿  # Lead report: DSpace UI design docs, section 03-staff-workflows (lead
+      "workflows")
+     … +62 lines (ctrl+o to expand)
+  ⎿  Shell cwd was reset to /Users/jonc/code/DSpace
+  ⎿  (another command ran in this repository at the same time; a change 
+     made by either may show under either result)
+
+⏺ 2 background agents launched (↓ to manage)
+   ├ @lead-screens-2 (lead-fable)
+   └ @lead-workflows-2 (lead-fable)
+
+⏺ Next I'm telling the four leads still on Fable to pass the save-as-you-go rule
+  down to their running subagents.
+
+⏺ Bash(cd /Users/jonc/code/archival-intelligence-ai-v2-dev; cat >>
+      reports/orchestrator_dspace-ui-plan_20261029.md <<'EOF'
+      - 19:30 leads screens + workflows stopped by…)
+  ⎿  - Subagents get disjoint files to write (a subagent owns named topic f
+     iles and figure-number ranges assigned by its lead) so they can run in
+      parallel without conflict; leads integrate the section README.
+     … +20 lines (ctrl+o to expand)
+  ⎿  Shell cwd was reset to /Users/jonc/code/DSpace
+  ⎿  (another command ran in this repository at the same time; a change 
+     made by either may show under either result)
+
+⏺ The two leads that hit the Fable limit (screens and workflows) are running
+  again on Opus, picking up from their ledgers. All six sections are now in
+  progress, and the save-as-you-go rule is in place:
+
+  - Common brief: it now ends with a mandatory "Checkpointing" section that
+    every lead and subagent reads. Each figure goes to disk as soon as it's
+    drawn, and each topic file as soon as its first section is drafted. Every
+    report keeps a Progress list, updated after every file.
+  - The four leads still on Fable (information architecture, users, public,
+    tech) have been told to pass that rule to their running subagents. They'll
+    also record each subagent's files and report path in their ledger before
+    dispatching it.
+  - If another lead stops: I restart it on Opus from its ledger, using the
+    briefs saved in
+    /Users/jonc/code/glam-rev-eng/dspace/ui-docs/_tools/LEAD-BRIEFS.md. That
+    rule is logged in the plan report,
+    reports/orchestrator_dspace-ui-plan_20261029.md.
+
+  So far the leads have found two errors in my own brief. There are 37 locale
+  files, not 38. The cookie-consent library is Orejime, a fork of Klaro, not
+  Klaro itself. The final docs will use the correct facts.
+
+  When all six reports are in, I'll check two facts from each against the
+  source, run the repo's checks, write the top-level index, and write the
+  completion handoff.
+
+
+⏺ Teammate @lead-screens-2 failed: You've hit your 5-hour limit · resets 9:50pm 
+(America/New_York)
+  Dispatching all 10 subagents in parallel now (1 scout-haiku, 2 worker-opus, 7
+  worker-sonnet), each with disjoint files and figure ranges.
+
+⏺ Teammate @lead-ia failed: You've hit your 5-hour limit · resets 9:50pm 
+(America/New_York)
+  Now wave 1: six parallel dispatches, each with disjoint files and figure
+  ranges.
+
+⏺ Teammate @lead-public failed: You've hit your 5-hour limit · resets 9:50pm 
+(America/New_York)
+  Scaffolding is in place. Now I'm dispatching wave 1: eight drafting workers
+  and two inventory scouts, all in parallel with disjoint files and figure
+  ranges.
+  ⎿  You've hit your 5-hour limit · resets 9:50pm (America/New_York)
+     /usage-credits to finish what you’re working on.
+
+⏺ Teammate @lead-users failed: You've hit your 5-hour limit · resets 9:50pm 
+(America/New_York)
+  Now dispatching all seven workers in parallel, each with disjoint files and
+  figure ranges.
+
+⏺ Teammate @lead-ia failed: You've hit your 5-hour limit · resets 9:50pm 
+(America/New_York)
+
+⏺ Teammate @lead-tech failed: You've hit your 5-hour limit · resets 9:50pm 
+(America/New_York)
+  Now the eight parallel dispatches.
+
+⏺ Teammate @lead-users failed: You've hit your 5-hour limit · resets 9:50pm 
+(America/New_York)
+
+⏺ Teammate @lead-public failed: You've hit your 5-hour limit · resets 9:50pm 
+(America/New_York)
+
+⏺ Teammate @lead-tech failed: You've hit your 5-hour limit · resets 9:50pm 
+(America/New_York)
+
+⏺ Teammate @lead-workflows-2 failed: You've hit your 5-hour limit · resets 
+9:50pm (America/New_York)
+  The ledger now records owners, figure ranges and report paths. Dispatching the
+  9 subagents in parallel.
+
+⏺ Every lead, including the two on Opus, has now hit the account-wide 5-hour
+  limit, which resets at 9:50pm. I'm saving the exact state now and scheduling
+  an automatic resume for after the reset.
+
+  Ran 2 shell commands (ctrl+o to expand)
+  ⎿  5 skills available
+
+⏺ CronCreate(57 21 29 10 *: Resume the DSpace UI/UX design documentation set
+            after the …)
+  ⎿  Scheduled b12392db (57 21 29 10 *, next run Thursday 9:57 PM)
+
+⏺ The run is paused. All six section leads hit your account's 5-hour usage limit
+  at 8:03pm, including the two I had restarted on Opus. The limit resets at
+  9:50pm, and I've scheduled this session to resume itself at 9:57pm.
+
+  Saved so far:
+  - 43 files in docs/competitors/dspace/ui-design-docs/:
+    - the legend and method page;
+    - the three overview figures, including the wireframe legend;
+    - the index skeleton for each section;
+    - topic files and figures, partial or finished, from the subagents that got
+      to run.
+  - Nine subagent reports and five lead draft reports in reports/. The finished
+    subagent work includes architecture decision records 01–14, the item-page
+    and theming write-ups, and the account and groups write-ups.
+  - Each lead's ledger lists what it owns and what state each item is in. With
+    the checkpoint rules in the common brief, a restarted lead continues from
+    its ledger instead of starting over.
+  - Both source clones are clean. Nothing is committed.
+
+  Resuming:
+  - Automatically: at 9:57pm the session restarts the six leads from their
+    ledgers. It starts them in smaller batches this time, because launching
+    about 60 agents at once is what burned through the limit.
+  - By hand: the scheduled resume only works while this session stays open. If
+    it closes, start a new session and point it at
+    docs/handoffs/2026-10-29_2005_dspace-ui-design-docs-limit-pause-claude.md in
+    the app repo; its "Resume" section lists the same steps.
+
+❯ continue and have each sub/agent periodically save their work to minize data  
+  loss in case of interruptions                                                 
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ scout-haiku(Probe whether subagents run)
+  ⎿  Backgrounded agent (↓ to manage · ctrl+o to expand)
+
+⏺ I'm running one small test agent to see whether subagents can run yet, before
+  I restart the leads.
+
+⏺ Agent "Probe whether subagents run" finished · 4s
+
+⏺ worker-opus(Probe Opus subagent availability)
+  ⎿  Backgrounded agent (↓ to manage · ctrl+o to expand)
+
+⏺ The small test agent ran fine. I'm now testing an Opus agent, because the
+  leads stopped while running on Opus.
+
+⏺ Agent "Probe Opus subagent availability" finished · 2s
+
+⏺ Opus agents run again, so I'll restart all six leads now on Opus, each capped
+  at 5 subagents at a time. I'm also cancelling the 9:57pm scheduled resume so
+  it doesn't start duplicate leads.
+
+⏺ CronDelete(b12392db)
+  ⎿  Cancelled b12392db
+
+⏺ 6 background agents launched (↓ to manage)
+   ├ @lead-ia-r (lead-fable)
+   ├ @lead-users-r (lead-fable)
+   ├ @lead-workflows-r (lead-fable)
+   ├ @lead-screens-r (lead-fable)
+   ├ @lead-public-r (lead-fable)
+   └ @lead-tech-r (lead-fable)
+
+⏺ Bash(cd /Users/jonc/code/archival-intelligence-ai-v2-dev; cat >>
+      reports/orchestrator_dspace-ui-plan_20261029.md <<'EOF'
+      - 20:03 all six leads (incl. the two Opus re…)
+  ⎿  ok
+  ⎿  Shell cwd was reset to /Users/jonc/code/DSpace
+  ⎿  (another command ran in this repository at the same time; a change 
+     made by either may show under either result)
+
+⏺ All six section leads are running again on Opus, after a test showed that
+  agents can run again. Each one picks up from its ledger and the files already
+  on disk, and redoes only what is missing or partial. Each is capped at 5
+  subagents at a time, since launching about 60 agents at once is what used up
+  the limit. I cancelled the 9:57pm scheduled resume so it can't start duplicate
+  leads.
+
+  Every subagent brief includes the save-as-you-go rule verbatim:
+
+  - Each figure and each section of a file goes to disk as soon as it's done.
+  - Each subagent updates the Progress list in its report after every file.
+  - Each lead records a dispatch in its ledger before making it, and updates the
+    ledger after every return.
+
+  If the limit hits again, the most a stop can lose is the file in progress. The
+  resume steps are in the pause handoff,
+  docs/handoffs/2026-10-29_2005_dspace-ui-design-docs-limit-pause-claude.md.
+
+  I'll take each lead's report as it arrives. When all six are in, I'll check
+  two facts from each against the source, run the repo's checks, build the
+  top-level index with the full figure list, and write the completion handoff.
+
+※ recap: You asked for a complete UI/UX documentation set for DSpace with diagrams and wireframes. All six section leads are running again on Opus from their saved ledgers. Next, I check each lead's report as it arrives, then build the index. (disable recaps in /config)
+
+
+⏺ Teammate @lead-users-r failed: You've hit your 5-hour limit · resets 1am 
+(America/New_York)
+  Ledger updated. Dispatching wave 1 (five workers, disjoint files and figure
+  ranges).
+
+⏺ Teammate @lead-workflows-r failed: You've hit your 5-hour limit · resets 1am 
+(America/New_York)
+  I'll start by reading the briefs and my state files.
+
+⏺ Teammate @lead-public-r failed: You've hit your 5-hour limit · resets 1am 
+(America/New_York)
+
+⏺ Teammate @lead-ia-r failed: You've hit your 5-hour limit · resets 1am 
+(America/New_York)
+  Ledger and report are on disk. Now I'm dispatching wave 1, five agents in
+  parallel.
+
+⏺ Teammate @lead-screens-r failed: You've hit your 5-hour limit · resets 1am 
+(America/New_York)
+  Ledger updated. Dispatching wave 1 (B, E, G1, G2, A) in parallel.
+
+⏺ Teammate @lead-tech-r failed: You've hit your 5-hour limit · resets 1am 
+(America/New_York)
+  ⎿  You've hit your 5-hour limit · resets 1am (America/New_York)
+     /usage-credits to finish what you’re working on.
+
+❯ /login                                                                        
+  ⎿  Login successful
+
+❯ continue and have each sub/agent periodically save their work to minize data  
+  loss in case of interruptions                                                 
+  ⎿  Found 16 new diagnostic issues in 3 files (ctrl+o to expand)
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ The new login has fresh limits, and 41 Markdown files, 42 figures and 26
+  reports were saved before the last stop. Next I'll resume the six leads from
+  their own conversations, capping each at 4 subagents this round.
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ All six section leads are running again on the new account. Each one continues
+  from its own conversation, so nothing it already knew has to be rebuilt.
+
+  Before the last stop:
+  - 41 Markdown files and 42 figures are in the sections, plus 26 agent reports
+    in reports/.
+  - The users, workflows, architecture-decision and accessibility sections are
+    furthest along.
+
+  This round:
+  - Each lead first lists what is finished, partial or missing. Then it
+    re-dispatches only the unfinished items, at most 4 subagents at a time. Last
+    round's cap of 5 still used up the limit in about 30 minutes.
+  - The save-as-you-go rule stays in every subagent brief: each figure and file
+    section goes to disk as soon as it's done.
+  - Each subagent updates its report's Progress list after every file, and each
+    lead updates its ledger after every return.
+  - If a stop happens again, little is lost and any lead can resume from its
+    ledger.
+
+  When all six final reports are in, I'll check two facts from each against the
+  source, run the repo's checks, write the top-level index with the full figure
+  list, and write the completion handoff.
+
+
+⏺ Teammate @lead-public-r finished
+  Last DM: [to a30ce863161ce92ce] Resume W2: write comcol doc now
+  Status: W2, W3, W5 and W8 are running again in the background, picking up from
+  their saved transcripts. W1 is queued to resume, and W4, W6, W7, W9 and W10
+  will start fresh as slots free up, with no more than 4 subagents at a time.
+  The ledger and progress report are updated, and I'll wait for the completion
+  notifications.
+
+  /Users/jonc/code/archival-intelligence-ai-v2-dev/reports/lead-fable_dspace-ui-
+  public_20261029.md
+
+⏺ The public lead isn't finished. It has four subagents running again, picking
+  up from their saved work, and it will start the other six as slots free up,
+  within the cap of 4. It's now waiting for those subagents to report back. Its
+  progress report is up to date at
+  reports/lead-fable_dspace-ui-public_20261029.md. The other five leads are
+  still working, and there's nothing for me to do until the final reports
+  arrive.
+
+
+⏺ Teammate @lead-ia-r finished
+  Last DM: [to a71314146e3150234] Resume F: finish i18n, write cookies
+  Round 3a is running. A, B, C and F were resumed with their context intact, and
+  a monitor reports new files in sections 01 and 07. The round-3b briefs are
+  saved in
+  /Users/jonc/code/glam-rev-eng/dspace/ui-docs/ia/partials/briefs-3b.md. I'm
+  waiting for completion notifications before starting D, E and G, so no more
+  than 4 agents run at once.
+
+⏺ The information-architecture lead is also partway through. Four of its
+  subagents are running again with their saved context. It has saved the briefs
+  for the other three on disk and will start them as slots free up, within the
+  cap of 4. I'm waiting for the final reports.
+
+
+⏺ Teammate @lead-public-r finished
+  Last DM: [to a8aac2da1a3ce64f4] Scratchpad collision: check theming file
+  I checked W3's warning. The theming file has no item-route text, but
+  03-item-page.md line 9 contains the "mounted twice" paragraph. I left it in
+  place because it is W3's own item-route text in its own file, and W3 says its
+  route section is now fixed. I told W8 to check its file and keep scratch files
+  in scratchpad/w8theming/ from now on. Wave B briefs now require each agent to
+  use its own scratch subdirectory. W2, W3, W5 and W8 are still running.
+
+  /Users/jonc/code/archival-intelligence-ai-v2-dev/reports/lead-fable_dspace-ui-
+  public_20261029.md
+
+⏺ The public lead found two of its subagents writing scratch files into the same
+  folder. That's worth preventing everywhere, so I'm adding a rule to the
+  common brief.
+
+⏺ Bash(cat >>
+      /Users/jonc/code/glam-rev-eng/dspace/ui-docs/_tools/BRIEF-COMMON.md
+      <<'EOF'
+      - Scratch isolation (added 22:00): subagents share one scratchpad. Each
+      subag…)
+  ⎿  ok
+  ⎿  (another command ran in this repository at the same time; a change 
+     made by either may show under either result)
+
+⏺ The public lead has the scratch-folder problem in hand: the subagent that
+  raised it has fixed its own file, and every later brief gives each subagent
+  its own scratch folder. The common brief now has the same rule for all leads:
+  each subagent keeps its temporary files in a folder of its own. All six leads
+  are still working.
+
+❯ PAUSE all sub/agents and sub/tasks and save any work until further notice.    
+  Give estimated % done                                                         
+⏺ Meanwhile I'm estimating progress from what is actually on disk, measured
+  against each section's targets.
+
+⏺ Bash(cd /Users/jonc/code/archival-intelligence-ai-v2-dev;
+      D=docs/competitors/dspace/ui-design-docs; for s in $D/*/; do n=$(basename
+      $s); printf '%-30s md=%2s (topic…)
+  ⎿  01-information-architecture    md= 5 (topic  4) svg=  7 wf= 0 words= 1
+     6609 todo=2
+     02-users-roles-permissions     md= 7 (topic  6) svg= 14 wf= 2 words= 1
+     … +18 lines (ctrl+o to expand)
+  ⎿  Shell cwd was reset to /Users/jonc/code/DSpace
+  ⎿  (another command ran in this repository at the same time; a change 
+     made by either may show under either result)
+
+⏺ Bash(cd /Users/jonc/code/archival-intelligence-ai-v2-dev; cat >
+      docs/handoffs/2026-10-29_2210_dspace-ui-design-docs-owner-pause-claude.md
+      <<'EOF'
+      # Paused by owner:…)
+  ⎿  Shell cwd was reset to /Users/jonc/code/DSpace
+  ⎿  (another command ran in this repository at the same time; a change 
+     made by either may show under either result)
+
+❯ PAUSE all sub/agents and sub/tasks and save any work until further notice.    
+  Give status update, estimated % done and estimate time until completion.      
+
+⏺ Agent "DSpace UI organisation and URLs" finished · 10m 1s
+
+⏺ Agent "W2 communities/collections doc" finished · 11m 0s
+
+⏺ Everything is paused. All six leads were told to have their subagents save
+  their current file and figure, start nothing new, record exact state in their
+  ledgers, and then stay idle. Subagents are confirming as they stop. For
+  example, the subagents writing section 01's functional organisation and URL
+  pages and section 05's communities and collections page saved their work and
+  marked the unfinished parts with resume markers. Both source clones are clean
+  and nothing is committed.
+
+  Status and estimated % done
+
+  ┌───────────────────────────┬──────────────────┬──────────────────┬──────┐
+  │          Section          │   Topic files    │     Figures      │ Done │
+  │                           │                  │   (wireframes)   │      │
+  ├───────────────────────────┼──────────────────┼──────────────────┼──────┤
+  │ 01 Information            │ 4 of 7           │ 7 of ~19         │ ~50% │
+  │ architecture              │                  │                  │      │
+  ├───────────────────────────┼──────────────────┼──────────────────┼──────┤
+  │ 02 Users, roles,          │ 6 of 6 (4 still  │ 14 (2)           │ ~80% │
+  │ permissions               │ have gaps)       │                  │      │
+  ├───────────────────────────┼──────────────────┼──────────────────┼──────┤
+  │ 03 Staff workflows        │ 6 of 8           │ 11 of 20+        │ ~55% │
+  ├───────────────────────────┼──────────────────┼──────────────────┼──────┤
+  │ 04 Staff screens /        │ 3 of 10          │ 8 of 30+         │ ~20% │
+  │ wireframes                │                  │                  │      │
+  ├───────────────────────────┼──────────────────┼──────────────────┼──────┤
+  │ 05 Public interface       │ 3 of 7           │ 13 (6) of ~30    │ ~40% │
+  ├───────────────────────────┼──────────────────┼──────────────────┼──────┤
+  │ 06 Visual design system   │ 1 of 4           │ 5 of 8+          │ ~25% │
+  ├───────────────────────────┼──────────────────┼──────────────────┼──────┤
+  │ 07 Accessibility / i18n   │ 1 of 3           │ 7 of 6+          │ ~45% │
+  ├───────────────────────────┼──────────────────┼──────────────────┼──────┤
+  │ 08 Technical architecture │ 3 of 8           │ 6 of 14+         │ ~35% │
+  ├───────────────────────────┼──────────────────┼──────────────────┼──────┤
+  │ 09 ADRs                   │ 9 of 18          │ 10               │ ~50% │
+  ├───────────────────────────┼──────────────────┼──────────────────┼──────┤
+  │ Legend, top-level index,  │ legend done      │ 3                │ ~30% │
+  │ verification              │                  │                  │      │
+  ├───────────────────────────┼──────────────────┼──────────────────┼──────┤
+  │ Overall                   │                  │                  │ ~40% │
+  └───────────────────────────┴──────────────────┴──────────────────┴──────┘
+
+  That is about 104,000 words and 84 figures on disk so far. None of the six
+  leads has run its final verification yet. The weakest section is 04 (staff
+  wireframes), which has the largest scope.
+
+  Estimated time to completion
+
+  Run time so far comes to about 2 hours, interrupted by three usage-limit
+  stops, and produced about 40%. At the current pace (6 leads, at most 4
+  subagents each):
+
+  - Remaining section work: about 3 to 3.5 hours.
+  - Final checks, top-level index and handoff: about 45 minutes after that. That
+    covers my fact checks of each lead report, the repo's checks, the figure
+    index and the top-level README.
+  - Total: about 4 hours of run time. Expect at least one more usage-limit stop
+    at this rate, which would add the wait until the limit resets.
+
+  To resume
+
+  Tell me "resume". I'll message each lead by name, so it continues with its
+  context, its ledger and its subagents' saved progress.
+
+  If this session is gone, the steps are in
+  docs/handoffs/2026-10-29_2210_dspace-ui-design-docs-owner-pause-claude.md in
+  the app repo. That handoff also holds the per-section table above.
+
+⏺ Agent "DSpace UI i18n and cookies" finished · 10m 38s
+
+⏺ Agent "DSpace UI navigation systems" finished · 10m 50s
+
+⏺ Three more section 01 and 07 subagents have saved and stopped.
+
+  - Internationalisation page (section 07): a complete draft of about 6,600
+    words with 3 figures. Its sister page on cookies and consent hasn't been
+    written yet; the subagent saved its source notes for it.
+  - Navigation page (section 01): a complete draft of about 6,200 words with 4
+    figures.
+  - Organisation and URLs pages (section 01): saved earlier. The organisation
+    page is written, and the URL page is about half done.
+
+  None of the three has run its final checks yet.
+
+  That moves section 01 to about 60% and section 07 to about 55%. Overall it's
+  still about 40%, with about 4 hours of run time left. Everything stays paused
+  until you say "resume".
+
+⏺ Agent "W8 theming architecture doc" finished · 11m 28s
+
+⏺ The section 06 theming subagent has saved and stopped. Its page has sections
+  1–7 written (about 5,800 words) and figures F06-01 to F06-05 rendered. The
+  findings and open-questions sections are still empty, and it hasn't run its
+  checks. Its findings are already checked against the code and saved in its
+  report, so they can go into the page when work resumes.
+
+  Section 06 moves to about 30% and overall is still about 40%. Everything stays
+  paused until you say "resume".
+
+⏺ Agent "DSpace UI route inventory" finished · 11m 18s
+
+⏺ The section 01 route-inventory subagent has saved and stopped. That's the last
+  of the four section 01 subagents.
+
+  Saved: a full inventory of all 46 route files, plus the main route page (about
+  5,500 words). The page has all six zone tables: about 244 routes, each with
+  its guards, data loaders, breadcrumb and title labels, and citations.
+
+  Not done yet on that page:
+  - The guard catalogue, the data-loader (resolver) catalogue, the breadcrumb
+    and title section, and the findings. The input for the guard catalogue is
+    saved in scratch.
+  - Its main figure.
+  - Its checks.
+
+  Things it noticed (to be checked before they go into the findings):
+  - One item-edit route has no permission guard, while its counterpart does.
+  - The quality-assurance pages exist twice: one copy needs only a login, the
+    other needs a site administrator.
+  - Seven page-title keys have no English text.
+
+  Section 01 is now about 65% done. Overall it's still about 40%, with about 4
+  hours of run time left. Everything stays paused until you say "resume".
+
+⏺ Agent "W5 search discovery doc" finished · 11m 42s
+
+⏺ Agent "W3 item page doc" finished · 11m 46s
+
+⏺ Two more section 05 subagents have saved and stopped.
+
+  - Search page: about half written. It has the routes, the component trees, and
+    the desktop and mobile results wireframes with callout tables. Eleven
+    sections and three diagrams are still to do. The subagent has already
+    checked the facts for them against the code and saved them in its report,
+    with line numbers, so they can be written without reading the code again.
+  - Item page: 4 of 18 sections are written, and 4 of 7 figures are drawn. The
+    written part covers the routes, the load sequence, which page each entity
+    type gets, and the simple view with a wireframe. Line-numbered notes for the
+    rest are saved.
+
+  Possible cross-contamination: two subagents wrote scratch files to the same
+  shared folder and briefly overwrote each other's text. Both have checked: the
+  item page has its own content back, and the theming page was clean. The new
+  common-brief rule now keeps each subagent in its own scratch folder. In the
+  final pass I'll still search the whole set for text that ended up on the wrong
+  page.
+
+  Section 05 is about 45% done. Overall it's about 40%, with about 4 hours of
+  run time left. Everything stays paused until you say "resume".
+
+
+@ lead-public-r❯ Lead public paused, ~20% done
+  Lead "public" paused at 22:08, about 20% done. Partial: 05/02 comcol (5,238
+  words, all 6 figures), 06/01 theming (5,189 words, all 5 figures), 05/03 item
+  (1,424 words, 4 of 7 figures) and 05/05 search (2,207 words, 3 of 6 figures).
+  Not started: 05/01, 05/04, 05/06, 05/07, 06/02, 06/03, 06/04, both READMEs,
+  verification. The 4 subagents got the PAUSE message, but it takes effect at
+  their next tool round. Agent ids, owned files and report paths are in
+  /Users/jonc/code/glam-rev-eng/dspace/ui-docs/public/LEDGER.md under "PAUSED
+  22:08".
+
+⏺ Teammate @lead-public-r finished
+  Last DM: [to a30ce863161ce92ce] PAUSE order
+  Lead "public" is paused at about 20% done, as the owner ordered at 22:08.
+
+  - Subagents: all four running workers got the PAUSE message. It takes effect
+    at each one's next step, so expect them to save and stop within moments. I
+    started nothing new.
+  - Partly written:
+    - Communities and collections: 5,238 words, all 6 figures.
+    - Theming: 5,189 words, all 5 figures.
+    - Item page: 1,424 words, 4 of 7 figures.
+    - Search: 2,207 words, 3 of 6 figures.
+  - Not started: home page, bitstreams and viewers, browse,
+    statistics/info/error pages, design tokens, component library, iconography
+    and layout, both section READMEs, and all verification.
+  - To resume: the ledger's "PAUSED 22:08" section lists every file and figure
+    as done, partial or missing, with each paused worker's ID, owned files and
+    report path. The four paused workers can be picked up from where they
+    stopped. The briefs for the workers not yet started are in WAVE-B-BRIEFS.md.
+
+  I am staying idle until told to continue.
+
+  Files:
+  - /Users/jonc/code/glam-rev-eng/dspace/ui-docs/public/LEDGER.md
+  - /Users/jonc/code/glam-rev-eng/dspace/ui-docs/public/WAVE-B-BRIEFS.md
+
+  /Users/jonc/code/archival-intelligence-ai-v2-dev/reports/lead-fable_dspace-ui-
+  public_20261029.md
+
+⏺ Teammate @lead-public-r finished
+  W3, W5 and W8 have confirmed the pause and saved their work. W2 has not
+  confirmed yet. I recorded each confirmed worker's saved state in the ledger
+  and am staying idle.
+
+  - W8 (theming): sections 1–7 are written, about 5,770 words, with all five
+    figures rendered. Only Findings and Open questions remain, and verification
+    has not been run.
+  - W5 (search): written through the wireframes section, with 3 of 6 figures
+    done. The report's "Resume notes" list the facts already checked against the
+    code, so the rest can be written without re-reading.
+  - W3 (item page): four sections are written, about 2,850 words, with figures
+    f05-11 to f05-14 on disk. f05-13 is not yet placed in the text, and three
+    wireframes are still to draw.
+
+  /Users/jonc/code/archival-intelligence-ai-v2-dev/reports/lead-fable_dspace-ui-
+  public_20261029.md
+
+⏺ The public lead (sections 05 and 06) has paused, and all four of its subagents
+  have saved and stopped. The lead hadn't yet recorded the
+  communities-and-collections subagent's confirmation, but that subagent did
+  save its work and stop. Its ledger lists every file as done, partial or
+  missing, with what each paused subagent owns. The briefs for the seven pages
+  not yet started are saved too, so the section can resume where it stopped.
+
+  The lead puts sections 05 and 06 together at about 20% done, lower than my
+  file-count estimate. Two pages are close to finished: communities and
+  collections, and theming. Two are partial: the item page and search. Seven
+  pages haven't been started.
+
+  That brings my overall estimate down slightly, to about 35–40%. The time
+  estimate goes up to about 4–4.5 hours of run time, plus waits for any usage
+  limit. Everything stays paused until you say "resume".
+
+
+@ lead-ia-r❯ ia paused, about 40% done
+  ia paused, about 40% done: A, B, C, F are stopped and saved; ledger at
+  /Users/jonc/code/glam-rev-eng/dspace/ui-docs/ia/LEDGER.md and Progress list in
+  /Users/jonc/code/archival-intelligence-ai-v2-dev/reports/lead-fable_dspace-ui
+  -ia_20261029.md are current; clones are clean.
+
+⏺ The information-architecture lead (sections 01 and 07) has paused at about 40%
+  done. All four of its subagents have saved and stopped, its ledger and
+  progress report are current, and both source clones are clean. That's lower
+  than my file-count estimate of 55–65%, because none of the pages there have
+  had their final checks yet.
+
+  Two of six leads have confirmed so far; I'm still waiting on users, workflows,
+  screens and tech. My overall estimate stays at about 35–40% done, with about
+  4–4.5 hours of run time left. Everything stays paused until you say "resume".
+
+
+⏺ Teammate @lead-ia-r finished
+  Last DM: [to a71314146e3150234] PAUSE: save and stop
+  I've paused all work on sections 01 and 07 as ordered; overall the set is
+  about 40% done. The four running subagents (A, B, C, F) each saved their
+  current file and updated their report's Progress list. Nothing is running and
+  nothing new will be dispatched. Both clones are clean.
+
+  State on disk at the pause:
+
+  file: 01/01-functional-organisation.md
+  state: draft complete
+  words: 3,220
+  ────────────────────────────────────────
+  file: 01/02-route-inventory.md
+  state: partial: route tables for all six zones done; guard and resolver
+  catalogues, findings and its figures still to do
+  words: 5,524
+  ────────────────────────────────────────
+  file: 01/04-navigation-systems.md
+  state: draft complete; the agent's final checks are still to run
+  words: 6,235
+  ────────────────────────────────────────
+  file: 01/05-url-scheme-identifiers.md
+  state: partial: sections 1–4 done, 5–9 still to do
+  words: 1,357
+  ────────────────────────────────────────
+  file: 07/02-internationalisation.md
+  state: draft complete
+  words: 6,550
+  ────────────────────────────────────────
+  file: 01/03, 01/06, 01/07, 07/01, 07/03
+  state: not started
+  words: 0
+  ────────────────────────────────────────
+  file: both section READMEs
+  state: skeletons only
+  words:
+
+  Figures: 14 of about 28 planned are rendered. F01-01, F01-02 and F01-10..14
+  are embedded in section 01, and F07-05..07 in 07/02. F07-01..04 are rendered
+  but wait for 07/01 to be written before they can be embedded.
+
+  Not done yet: the critique pass, the two section READMEs, verification steps
+  1–6, and the final sections of my report. So far I have fact-checked F's i18n
+  draft and the accessibility notes against the source, and both hold.
+
+  To resume: send a message to each paused agent's ID to continue it with its
+  context intact. The order is A, C, F plus a resume of D (content model and
+  layout), then fresh agents for E (accessibility) and G (site maps), at most 4
+  at a time. The agent IDs, owned files, figure ranges and report paths are in
+  the ledger, and the saved message for D is in partials/briefs-3b.md.
+
+  Files are in /Users/jonc/code/glam-rev-eng/dspace/ui-docs/ia/:
+  - LEDGER.md
+  - partials/briefs-3b.md
+
+  /Users/jonc/code/archival-intelligence-ai-v2-dev/reports/lead-fable_dspace-ui-
+  ia_20261029.md
+
+⏺ The information-architecture lead's detailed report gives the state of
+  sections 01 and 07:
+
+  - Complete drafts:
+    - Functional organisation (about 3,200 words).
+    - Navigation systems (about 6,200 words), whose final checks are still to
+      run.
+    - Internationalisation (about 6,600 words).
+  - Partial:
+    - The route inventory, whose route tables for all six zones are done.
+    - URL scheme, sections 1–4 of 9.
+  - Not started:
+    - Site maps, content model and layout in section 01.
+    - Accessibility and cookies/privacy in section 07.
+  - Figures: 14 of about 28 planned are rendered.
+
+  The lead has written down which subagents to restart, in what order, and the
+  saved briefs for the rest.
+
+  I'm still waiting on four leads: users, workflows, screens and tech. Overall
+  the set is about 35–40% done, with about 4–4.5 hours of run time left.
+  Everything stays paused until you say "resume".
+
+
+⏺ Teammate @lead-ia-r finished
+  A and B have both confirmed they are paused with their state saved. The ledger
+  now also has A's corrected route counts (244 declared, 288 with double
+  mounts, 164 with a component) and its three scratch inputs for the rest of the
+  route inventory. C confirmed the pause in its report, and F saved its last
+  section before stopping. Nothing is running and both clones are clean. I'm
+  idle until further notice.
+
+  /Users/jonc/code/archival-intelligence-ai-v2-dev/reports/lead-fable_dspace-ui-
+  ia_20261029.md
+
+⏺ The information-architecture lead (sections 01 and 07) is fully stopped:
+  nothing is running, all four subagents have saved, and the ledger is current.
+  I'm still waiting for the users, workflows, screens and tech leads to confirm.
+
+
+⏺ Teammate @lead-tech-r failed: You've hit your weekly limit · resets Nov 3 at 
+2pm (America/New_York)
+
+⏺ Teammate @lead-tech-r failed: You've hit your weekly limit · resets Nov 3 at 
+2pm (America/New_York)
+  ⎿  You've hit your weekly limit · resets Nov 3 at 2pm (America/New_York)
+     /usage-credits to finish what you’re working on.
+
+
+⏺ Teammate @lead-screens-r failed: You've hit your weekly limit · resets Nov 3 
+at 2pm (America/New_York)
+  R1 is back with all four finished: 02 (8 figures), 03 (15), 06 (16), 08 (12).
+  Recording the returns, then dispatching R2 (G2, C, D, F).
+
+⏺ Teammate @lead-screens-r failed: You've hit your weekly limit · resets Nov 3 
+at 2pm (America/New_York)
+
+⏺ Teammate @lead-workflows-r failed: You've hit your weekly limit · resets Nov 3
+at 2pm (America/New_York)
+  Round A is back: 03 is new and complete, and 02, 04 and 06 are completed. I'll
+  update the ledger and the report, then dispatch round B.
+
+⏺ Teammate @lead-workflows-r failed: You've hit your weekly limit · resets Nov 3
+at 2pm (America/New_York)
+
+⏺ Teammate @lead-users-r failed: You've hit your weekly limit · resets Nov 3 at 
+2pm (America/New_York)
+  Dispatching wave B (three workers).
+
+⏺ Teammate @lead-users-r failed: You've hit your weekly limit · resets Nov 3 at 
+2pm (America/New_York)
+
+  Ran 1 shell command (ctrl+o to expand)
+❯ PAUSE all sub/agents and sub/tasks and save any work until further notice.    
+  Give status update, estimated % done and estimate time until completion.      
+  ⎿  Interrupted · What should Claude do instead?
+
+❯ PAUSE all sub/agents and sub/tasks and save any work until further notice.    
+  Give status update, estimated % done and estimate time until completion.      
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ Everything is stopped. At 10:36pm the account hit its weekly usage limit,
+  which resets Monday Nov 3 at 2pm EDT. Until then no agent can run, so the
+  pause will hold whether or not anyone acts on it. Everything written is on
+  disk, both source clones are clean, and nothing is committed.
+
+  The users, workflows, screens and tech leads hadn't acted on the pause order
+  yet, so they kept working until the limit stopped them. That makes this pause
+  less tidy than planned, but it means about 150,000 more words and 117 more
+  figures were written than at my last estimate.
+
+  Status and estimated % done
+
+  ┌───────────────────────────┬──────────┬──────────────────┬───────┬──────┐
+  │          Section          │  Topic   │     Figures      │ Words │ Done │
+  │                           │  files   │   (wireframes)   │       │      │
+  ├───────────────────────────┼──────────┼──────────────────┼───────┼──────┤
+  │ 01 Information            │ 4 of 7   │ 7                │ 16.6k │ ~40% │
+  │ architecture              │          │                  │       │      │
+  ├───────────────────────────┼──────────┼──────────────────┼───────┼──────┤
+  │ 02 Users, roles,          │ 7        │ 32 (2)           │ 45.4k │ ~85% │
+  │ permissions               │          │                  │       │      │
+  ├───────────────────────────┼──────────┼──────────────────┼───────┼──────┤
+  │ 03 Staff workflows        │ 7 of 8   │ 43               │ 59.7k │ ~85% │
+  ├───────────────────────────┼──────────┼──────────────────┼───────┼──────┤
+  │ 04 Staff screens /        │ 6 of 10  │ 55 (51)          │ 41.7k │ ~60% │
+  │ wireframes                │          │                  │       │      │
+  ├───────────────────────────┼──────────┼──────────────────┼───────┼──────┤
+  │ 05 Public interface       │ 3 of 7   │ 13 (6)           │ 10.7k │ ~25% │
+  ├───────────────────────────┼──────────┼──────────────────┼───────┼──────┤
+  │ 06 Visual design system   │ 1 of 4   │ 5                │ 6.1k  │ ~20% │
+  ├───────────────────────────┼──────────┼──────────────────┼───────┼──────┤
+  │ 07 Accessibility / i18n   │ 1 of 3   │ 7                │ 6.8k  │ ~35% │
+  ├───────────────────────────┼──────────┼──────────────────┼───────┼──────┤
+  │ 08 Technical architecture │ 8 of 8   │ 18               │ 48.9k │ ~85% │
+  ├───────────────────────────┼──────────┼──────────────────┼───────┼──────┤
+  │ 09 ADRs                   │ 18 of 18 │ 18               │ 25.7k │ ~85% │
+  ├───────────────────────────┼──────────┼──────────────────┼───────┼──────┤
+  │ Legend, top-level index,  │ legend   │ 3                │       │ ~30% │
+  │ verification              │ done     │                  │       │      │
+  ├───────────────────────────┼──────────┼──────────────────┼───────┼──────┤
+  │ Overall                   │          │ 201 figures      │ 262k  │ ~60% │
+  └───────────────────────────┴──────────┴──────────────────┴───────┴──────┘
+
+  What's left:
+  - Sections 02, 03, 08 and 09: each needs its index page finished, its own
+    checks, and a check of some citations against the code.
+  - Section 04: four topic files are still to write.
+  - Sections 01 and 07: about half the pages are still to write.
+  - Sections 05 and 06: most of the pages are still to write.
+  - The whole set: my fact checks of each lead report, the repo's checks, a
+    search for text that two subagents' shared scratch folder may have mixed
+    between pages, the top-level index with the full figure list, and the
+    completion handoff.
+
+  Estimated time to completion
+
+  - Remaining section work: about 2 to 2.5 hours of run time. Sections 05 and 06
+    are most of it.
+  - Final checks, index and handoff: about 45 minutes after that.
+  - Total: about 3 hours of run time, at the current cap of 4 subagents per
+    lead.
+  - Earliest start: Nov 3 at 2pm EDT, unless you switch to another account
+    sooner.
+
+  To resume
+
+  On the first resume, each lead must re-list the files actually on disk before
+  doing anything else. Some subagent returns came in after the leads' last
+  ledger updates, so the ledgers may undercount what's done.
+
+  - If this session is still open: tell me "resume". I'll message each lead by
+    name, so it keeps its context.
+  - If it's gone: start a new session and point it at
+    docs/handoffs/2026-10-29_2210_dspace-ui-design-docs-owner-pause-claude.md in
+    the app repo. Its final section has the table above and the resume steps.
+    The list of files on disk at the pause is in
+    /Users/jonc/code/glam-rev-eng/dspace/ui-docs/_tools/files-at-pause.txt.
+
+※ recap: We're building the DSpace UI/UX documentation set, about 60% done and paused because the weekly usage limit runs until Nov 3 at 2pm. Next, say "resume" after the reset (or on another account) and I'll restart the six section leads from their saved work. (disable recaps in /config)
+
+❯ ~/.claude/CLAUDE.md changed today. Read it now with the Read tool. Its "Model 
+  and cost policy" section replaces the old "Model orchestration hierarchy"     
+  (Fable gate) section and overrides what you loaded at startup. From now on:   
+  name model and effort on every Agent dispatch, at or below this session's; no 
+  lead-fable; about 3 concurrent subagents by default.                          
+  ⎿  1 skill available
+
+  Read 1 file (ctrl+o to expand)
+
+⏺ I've read the new policy. The pause stays in place, but the resume plan in the
+  handoffs uses lead agents, which the new policy rules out, so I'm recording a
+  replacement plan in a new dated handoff.
+
+  Ran 2 shell commands (ctrl+o to expand)
+
+⏺ I've read the updated ~/.claude/CLAUDE.md and will follow its "Model and cost
+  policy" from here on:
+
+  - Every Agent dispatch names model and effort, at or below this session's
+    (Opus 5.5).
+  - No lead-fable and no lead layer: I dispatch the workers myself and keep the
+    critique and integration.
+  - At most 3 subagents at a time by default.
+  - Long unattended work runs from a RUN.md spec started with claude-run.
+
+  Nothing is running, and the pause stays in place. The account's weekly limit
+  resets Nov 3 at 2pm EDT.
+
+  The resume plan in my earlier handoffs relied on lead agents, so I wrote a
+  replacement:
+  docs/handoffs/2026-10-30_0333_dspace-ui-design-docs-resume-plan-v2-claude.md
+  in the app repo. It covers:
+
+  1. Re-listing what is actually on disk first, because some ledgers undercount.
+  2. The order of work, largest gaps first: sections 05, 06, 01, 07, then 04,
+     then finishing 02, 03, 08 and 09.
+  3. Tiers: worker-sonnet at medium effort by default, worker-opus only for
+     three named hard pages (item page, search, route inventory), never more
+     than 3 at once.
+  4. Integration and final checks, done by me.
+
+  The plan report and the memory note now point to this handoff. The status is
+  unchanged at about 60% done. At 3 workers instead of the earlier ~24, the
+  remaining work comes to about 3.5–4 hours of run time plus about 45 minutes of
+  integration.
+
+  One rule I broke last night: I added an update section to my own 22:10
+  handoff, which STANDARDS.md says must never be rewritten. Update CLAUDE.md so
+  this doesn't happen again. From now on every update goes in a new dated file,
+  as I did here.
+
+  For an unattended resume after the reset, I can write the RUN.md from your
+  template so you can start it with claude-run. Want me to?
+
+⏺ Held peer message — from uds:/tmp/cc-socks/15731.sock [verified pid 
+  15731] (peer claims name: archivesspace-c1); preview: «Config change 
+  from the user, relayed by the archivesspace session: 
+  ~/.claude/CLAUDE.md changed today. Read it now with t» …[1 line, 453 
+  chars total — expand to review before approving] — not delivered to 
+  Claude (1 held). The sending session's permission mode class doesn't 
+  match this session's. Review it below, or set "crossSessionInbound" to
+  "accept".
+
+※ recap: I'm building the DSpace UI/UX documentation set, which is about 60% done and paused until the weekly limit resets Nov 3 at 2pm. Next, shall I write a RUN.md so you can resume it unattended with claude-run? (disable recaps in /config)
+
+⏺ Released 1 held cross-session message to Claude's queue (you approved 
+  it).
+
+@ archivesspace-c1❯
+  Config change from the user, relayed by the archivesspace session:
+  ~/.claude/CLAUDE.md changed today. Read it now with the Read tool. Its "Model
+  and cost policy" section replaces the old "Model orchestration hierarchy"
+  (Fable gate) section and overrides what you loaded at startup. From now on:
+  name model and effort on every Agent dispatch, at or below this session's; no
+  lead-fable (disabled); about 3 concurrent subagents by default. No reply
+  needed.
+
+⏺ The archivesspace session relayed the same ~/.claude/CLAUDE.md change you gave
+  me directly, and I've already applied it. Nothing new to act on: everything
+  here stays paused until you say "resume".
+
+⏺ Held peer message — from uds:/tmp/cc-socks/15731.sock [verified pid 
+  15731] (peer claims name: archivesspace-c1); preview: «From the user, 
+  relayed by the archivesspace session: ONLY act on this if THIS session
+  owns this products UI/UX documenta» …[3 lines, 558 chars total — 
+  expand to review before approving] — not delivered to Claude (1 held).
+  The sending session's permission mode class doesn't match this 
+  session's. Review it below, or set "crossSessionInbound" to "accept".
+
+⏺ Released 1 held cross-session message to Claude's queue (you approved 
+  it).
+
+@ archivesspace-c1❯
+  From the user, relayed by the archivesspace session: ONLY act on this if THIS
+  session owns this product's UI/UX documentation work (ui-design-docs /
+  ~/code/glam-rev-eng/<slug>/ui-docs). If you are the other session for this
+  product (e.g. the Phase 1 reverse-spec session), do nothing and do not reply.
+
+  The prompt to follow is the file
+  ~/code/glam-rev-eng/_tools/PROMPT_finish-ui-docs-low-cost.md — read it with
+  the Read tool and carry it out exactly (it ends with you showing the user the
+  filled RUN.md and the claude-run --dry-run output, then stopping).
+
+⏺ This session owns the DSpace UI docs, so I'm reading the relayed prompt file.
+
+  Read 1 file, listed 1 directory, ran 4 shell commands (ctrl+o to expand)
+
+⏺ Quick update: the state table is written. I'm now filling in the RUN.md spec
+  for the low-cost finish, then I'll do the dry run and stop for you.
+
+⏺ Write(~/code/glam-rev-eng/dspace/ui-docs/RUN.md)
+  ⎿  Wrote 118 lines to ~/code/glam-rev-eng/dspace/ui-docs/RUN.md
+       1 ---
+       2 mode: autonomous
+       3 hitl: defer
+       4 model: opus
+       5 effort: medium
+       6 ceiling: sonnet/medium
+       7 permission_mode: auto
+       8 headless: true
+       9 max_budget_usd: 60
+      10 run_dir: /Users/jonc/code/glam-rev-eng/dspace/ui-docs/run-202610
+     … +109 lines (~12 KB) (ctrl+o to expand)
+
+  Listed 1 directory, ran 1 shell command (ctrl+o to expand)
+
+⏺ The real run copies the spec into the run folder while the dry run skips it,
+  as expected. Now for the final step, I'll write the handoff by hand into the
+  app repo, since running /handoff here would write it into this backend clone
+  instead.
+
+  Ran 1 shell command (ctrl+o to expand)
+
+⏺ The low-cost spec for finishing the DSpace UI docs is written and the dry run
+  worked. I have not launched it.
+
+  1. Where things stand. Nothing was running; everything had stopped at the
+  weekly limit. The per-file state table is in
+  /Users/jonc/code/glam-rev-eng/dspace/ui-docs/run-20261030/STATE.md. A script
+  in the run folder (scripts/state.py) regenerates it, and the run will use it
+  as its ledger. The set is about 60% done:
+  - Topic files done: sections 08 and 09, most of 02, 03 and 04.
+  - Partial or missing: most of 05, 06, 07 and 01, plus every section index page
+    and the top-level index.
+
+  2. The spec. It's at /Users/jonc/code/glam-rev-eng/dspace/ui-docs/RUN.md,
+  modelled on the ArchivesSpace example.
+  - Settings: autonomous, questions deferred, an Opus coordinator at medium
+    effort, no subagent above Sonnet/medium, no lead layer, headless, $60
+    budget, run folder run-20261030.
+  - Workers: at most 3 worker-sonnet at once, model and effort named explicitly,
+    one worker per partial file, about 400 words per section.
+  - Evidence: no new research. Workers cite the saved notes, earlier reports and
+    the Phase 1 reverse specs, opening at most 3 new source files per section
+    and only for a named gap. Inventories come from scripts.
+  - Figures: diagrams via render.sh, wireframes via wireframe.py from JSON
+    specs, no hand-written SVG.
+  - Order: most complete sections first: 08 and 09 → 02 → 03 → 04 → 07 → 06 → 05
+    → 01 → integration.
+  - Scope:
+    - Keep the 60 existing wireframes and add at most 12 new ones, in a fixed
+      priority order.
+    - 18 missing files get one short page each.
+    - The design-token and component tables are generated by script.
+    - Anything else goes under "Not covered" in its section index.
+  - Corrections: Orejime, not Klaro; 37 locales, not 38; Angular 20. The run
+    also searches for text that crossed between pages through the shared scratch
+    folder.
+  - Done checks: no TODO markers left, every section index complete, a top-level
+    index with the figure list, the repo's check.mjs clean for DSpace, no
+    figure orphans, both clones clean.
+  - Required output: REPORT.md, QUESTIONS.md and DECISIONS.md in the run folder.
+
+  One deliberate departure from your prompt: ADRs. It caps ADRs at 12, but all
+  18 are already finished. Since the prompt also says to salvage everything on
+  disk, the spec keeps all 18 and adds none. If you'd rather cut to 12, say
+  which six to drop.
+
+  3. Dry run output
+  claude-run: {'RUN_MODE': 'autonomous', 'RUN_HITL': 'defer', 'RUN_DIR': 
+  '/Users/jonc/code/glam-rev-eng/dspace/ui-docs/run-20261030', 
+  'AGENT_TIER_CEILING': 'sonnet/medium'}
+  claude-run: claude --model opus --effort medium --permission-mode auto -p Read
+  the run spec /Users/jonc/code/glam-rev-eng/dspace/ui-docs/run-20261030/RUN.md
+  and carry it out to completion. Run files: .../QUESTIONS.md (open questions),
+  .../DECISIONS.md (choices made), .../REPORT.md (final report, required). 
+  --output-format stream-json --verbose --max-budget-usd 60
+  The real run copies RUN.md into the run folder before it starts. The dry run
+  doesn't.
+
+  4. Handoff. It's in
+  docs/handoffs/2026-10-30_0356_dspace-ui-docs-low-cost-claude.md in the app
+  repo. I wrote it by hand rather than with /handoff, because this session runs
+  inside the DSpace clone and the skill would write into it. The memory note now
+  points to this handoff and the spec.
+
+  To launch after the weekly limit resets (Nov 3, 2pm EDT), or from another
+  account sooner:
+  cd /Users/jonc/code/glam-rev-eng/dspace/ui-docs && claude-run RUN.md
